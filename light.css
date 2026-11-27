@@ -1,0 +1,133 @@
+
+:root {
+  --background: hsl(0deg 12.34% 92.31% / 1);
+  --text: hsl(0deg 47.06% 25% / 1);
+  --h1:hsl(327.62deg 35.2% 80% / 1);
+  --h2:hsl(0, 61%, 12%);
+  --h3:hsl(0deg 60.66% 17% / 1);
+  --h4:hsl(0deg 60.66% 22% / 1);
+  --h5:hsl(0deg 60.66% 32% / 1);
+  --h6:hsl(0deg 60.66% 37% / 1);
+
+  --header-background: hsl(0, 61%, 12%);
+  
+  --nav-background: hsl(0deg 60.66% 11.96% / 1);
+  --nav-text:hsl(327.62deg 35.2% 64.9% / 1);
+  --nav-link-hover: hsl(328deg 35.43% 55% / 1);
+
+ --button-background:hsl(327.75deg 34.78% 35% / 1);
+  --button-text: hsl(0deg 12.82% 87% / 1);
+  --button-hover-background: hsl(327.64deg 34.9% 45% / 1);
+
+  --footer-background:hsl(327.62deg 35.2% 70% / 1);
+  --footer-text:  hsl(0, 61%, 12%);
+  --footer-link: hsl(327.62deg 35.2% 50% / 1);
+  --footer-link-hover: hsl(327.75deg 34.78% 35% / 1);
+
+}
+
+body {
+  margin: 0;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
+    background-color: var(--header-background);
+}
+
+
+header h1 {
+  color: var(--h1);
+  font-weight: 300;
+  font-size: 32px;
+  margin: 0;
+}
+
+nav {
+  background-color: var(--nav-background);
+  padding: 10px 40px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--nav-text);
+}
+
+nav a:hover {
+  color: var(--nav-link-hover );
+}
+
+.style-button {
+    background-color: var(--button-background);
+    color: var(--button-text);
+
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.style-button:hover {
+  background-color: var(--button-hover-background);
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+/* First button */
+#theme {
+  position: absolute;
+  top: 150px;
+  right: 20px;
+}
+
+/* Second button */
+#reading {
+  position: absolute;
+  top: 110px;
+  right: 20px;
+}
+
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
+
+footer {
+  background-color: var(--footer-background);
+  color: var(--footer-text);
+  text-align: center;
+  padding: 10px;
+  margin-top: auto;
+}
+
+footer a {
+  color: var(--footer-link);
+}
+
+footer a:hover {
+  color: var(--footer-link-hover);
+}
+
+
