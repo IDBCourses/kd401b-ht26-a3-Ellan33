@@ -106,7 +106,7 @@ nav a:hover {
 }
 
 
-
+/* stylelint-disable no-descending-specificity */
 
 footer {
   background-color: var(--footer-background);
